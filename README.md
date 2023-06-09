@@ -23,15 +23,15 @@ Content management system (CMS) for creating and updating website content.
 Sales and revenue tracking for business insights.
 Review and rating management for products and sellers.
 ## Installation and Setup
-Clone the repository to your local machine:
+1- Clone the repository to your local machine:
    ```bash
     git clone https://github.com/your-username/e-commerce-website.git
    ```
-Open the project in your preferred Integrated Development Environment (IDE).
+2- Open the project in your preferred Integrated Development Environment (IDE).
 
-Build and run the project within your IDE, ensuring that all dependencies are successfully resolved.
+3- Build and run the project within your IDE, ensuring that all dependencies are successfully resolved.
 
-Access the website through the provided URL or localhost port.
+4- Access the website through the provided URL or localhost port.
 
 ## Technologies Used
 ASP.NET MVC 5
