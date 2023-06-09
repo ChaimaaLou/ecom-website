@@ -1,0 +1,229 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- Start slider -->
+<section id="aa-slider">
+    <div class="aa-slider-area">
+        <div id="sequence" class="seq">
+            <div class="seq-screen">
+                <ul class="seq-canvas">
+
+                    <!-- single slide item -->
+                    @foreach (var item in @ViewBag.Slider)
+                    {
+                        <li>
+                            <div class="seq-model">
+                                <img data-seq src="@item.ImageURL" alt="@item.AltText" />
+                            </div>
+                            <div class="seq-title">
+                                <span data-seq>@item.OfferTag</span>
+                                <h2 data-seq>@item.Title</h2>
+                                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">@item.BtnText</a>
+                            </div>
+                        </li>
+                    }
+                    <!-- end single slide item -->
+
+                </ul>
+            </div>
+            <!-- slider navigation btn -->
+            <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+                <a type="button" href="" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+                <a type="button" href="" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+            </fieldset>
+        </div>
+    </div>
+</section>
+<!-- / slider -->
+<!-- Start Promo section -->
+<section id="aa-promo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-promo-area">
+                    <div class="row">
+                        <!-- promo left -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-left">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-womens.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "Women" })"><span>For Women</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo right -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-right">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-mens.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "Men" })"><span>For Men</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo left -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-right">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-kids.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "kids" })"><span>For Kids</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="aa-promo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-promo-area">
+                    <div class="row">
+                        <!-- promo left -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-left">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-beauty.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "beauty" })"><span>Beauty picks</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo right -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-right">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-gaming.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "gaming" })"><span>Gaming accessories</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo left -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-left">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-phones.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "phones" })"><span>Phones</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="aa-promo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-promo-area">
+                    <div class="row">
+                        <!-- promo left -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-left">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-laptops.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "laptops" })"><span>Laptops</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo right -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-right">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-tablets.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "tablets" })"><span>Tablets</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo left -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-left">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-home_products.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "home_appliances" })"><span>Home Appliances</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="aa-promo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-promo-area">
+                    <div class="row">
+                        <!-- promo left -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-left">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-sports.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "Sports" })"><span>Sports</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo right -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-right">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-music.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "music" })"><span>Music</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo left -->
+                        <div class="col-md-4 ">
+                            <div class="aa-promo-left">
+                                <div class="aa-promo-banner">
+                                    <img src="~/Content/img/promo-banner-books.jpg" alt="img">
+                                    <div class="aa-prom-content">
+                                        <h4><a href="@Url.Action("GetProductsByCategory", "Product", new { @categoryName = "books" })"><span>Books</span></a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- / Promo section -->
