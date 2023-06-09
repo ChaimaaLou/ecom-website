@@ -22,7 +22,7 @@ User management to handle customer accounts and access rights.
 Content management system (CMS) for creating and updating website content.
 Sales and revenue tracking for business insights.
 Review and rating management for products and sellers.
-##Installation and Setup
+## Installation and Setup
 Clone the repository to your local machine:
    ```bash
     git clone https://github.com/your-username/e-commerce-website.git
